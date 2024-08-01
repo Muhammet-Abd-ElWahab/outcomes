@@ -47,7 +47,7 @@ def disply_test_train(test_train, name):
                     cellStyle={'textAlign': 'center', 'fontSize': '16px', 'fontFamily': 'Arial, sans-serif','color': '#008080'}
                     
                         )
-    gd.configure_column("Metric", header_name="Metric",minWidth=550,groupable=True,filter=True,autoSize=False,
+    gd.configure_column("Metric", header_name="Metric",minWidth=250,groupable=True,filter=True,autoSize=False,
                 resizable=True,
                 # headerStyle={'textAlign': 'center', 'fontSize': '50px', 'fontFamily': 'Arial, sans-serif', 'backgroundColor': '#f0f0f0', 'color': '#008080'},  # Styling for header
                 cellStyle={'textAlign': 'center', 'fontSize': '16px', 'fontFamily': 'Arial, sans-serif','color': '#008080'}
