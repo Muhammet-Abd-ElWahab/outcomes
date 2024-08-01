@@ -128,7 +128,7 @@ def gender_pie():
     gender["proportion"] =  round(gender["proportion"]*100, 2)
     gender["Sex"] = gender["Sex"].apply(lambda x: "F" if x ==0  else "M")
 
-    make_a_pie(gender, ["Female", "Male"],380 , "Gender", "Patient Gender")
+    make_a_pie(gender, ["Female", "Male"],400 , "Gender", "Patient Gender")
 
 # ascites_pie
 def ascites_pie():
@@ -138,7 +138,7 @@ def ascites_pie():
     Ascites["proportion"] =  round(Ascites["proportion"]*100, 2)
     Ascites["Ascites"] = Ascites["Ascites"].apply(lambda x: "No" if x ==0  else "Yes")
     
-    make_a_pie(Ascites, [i for i in Ascites.Ascites.values],380 , "Ascites Status", "Ascites")
+    make_a_pie(Ascites, [i for i in Ascites.Ascites.values],400 , "Ascites Status", "Ascites")
 
 # hepatomegaly_pie
 def hepatomegaly_pie():
@@ -146,7 +146,7 @@ def hepatomegaly_pie():
     Hepatomegaly["Count"] = df_clean['Hepatomegaly'].value_counts().values
     Hepatomegaly["proportion"] =  round(Hepatomegaly["proportion"]*100, 2)
     Hepatomegaly["Hepatomegaly"] = Hepatomegaly["Hepatomegaly"].apply(lambda x: "No" if x ==0  else "Yes")
-    make_a_pie(Hepatomegaly, [i for i in Hepatomegaly.Hepatomegaly.values],380 , "Hepatomegaly Status", "Hepatomegaly", None)
+    make_a_pie(Hepatomegaly, [i for i in Hepatomegaly.Hepatomegaly.values],400 , "Hepatomegaly Status", "Hepatomegaly", None)
     
 
 # spiders_pie
@@ -157,7 +157,7 @@ def spiders_pie():
     Spiders["proportion"] =  round(Spiders["proportion"]*100, 2)
     Spiders["Spiders"] = Spiders["Spiders"].apply(lambda x: "No" if x ==0  else "Yes")
 
-    make_a_pie(Spiders, [i for i in Spiders.Spiders.values],380 , "Spiders Status", "Spiders")
+    make_a_pie(Spiders, [i for i in Spiders.Spiders.values],400 , "Spiders Status", "Spiders")
 
 # edema_pie
 def edema_pie():
@@ -166,7 +166,7 @@ def edema_pie():
     Edema["proportion"] =  round(Edema["proportion"]*100, 2)
     Edema["Edema"] = Edema["Edema"].apply(lambda x: "No" if x ==0  else "Yes")
 
-    make_a_pie(Edema,  [i for i in Edema.Edema.values],380 , "Edema Status", "Edema")
+    make_a_pie(Edema,  [i for i in Edema.Edema.values],400 , "Edema Status", "Edema")
    
 def stage_bar():
     Stage = df_clean['Stage'].value_counts(normalize=True).to_frame().reset_index()
