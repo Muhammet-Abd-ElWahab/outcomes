@@ -39,7 +39,6 @@ from sklearn.model_selection import train_test_split, cross_val_score, Stratifie
 import xgboost as xgb
 from lightgbm import LGBMClassifier 
 from sklearn.ensemble import RandomForestClassifier
-from catboost import CatBoostClassifier
 
 
 import re
