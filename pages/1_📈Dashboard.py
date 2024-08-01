@@ -191,7 +191,7 @@ def stage_bar():
     ytitle="Stage Propotion %" ,
     colour='Stage', 
     bg=0.001, 
-    bgg=0.01,
+    bgg=0.001,
     yscale = False,
     yscale_percentage=False
 )
