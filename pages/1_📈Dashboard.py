@@ -171,7 +171,7 @@ def edema_pie():
 def stage_bar():
     Stage = df_clean['Stage'].value_counts(normalize=True).to_frame().reset_index()
     Stage["Count"] = df_clean['Stage'].value_counts().values
-    Stage["proportion"] =  round(Stage["proportion"]*100, 2)
+    Stage["proportion"] =  round(Stage["proportion"]*100, 1)
     Stage["proportions"] = Stage["proportion"].apply(lambda x: str(x)+" %")
     Stage["Stage"]= Stage["Stage"].map({3.0:"Stage 3", 4.0:"Stage 4", 2.0:"Stage 2", 1.0:"Stage 1"})
     Stage = Stage.sort_values(by="Stage")
