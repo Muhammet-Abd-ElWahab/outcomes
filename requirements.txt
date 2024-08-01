@@ -1,6 +1,7 @@
 streamlit==1.36.0
 streamlit_extras==0.4.3
 streamlit_option_menu==0.3.12
+streamlit-aggrid==1.0.5
 xgboost==2.1.1
 lightgbm==4.5.0
 matplotlib==3.8.4
